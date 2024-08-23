@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Unit Converter</title>
 </head>
 <body>
+
+    <div id="container">
+
+        <div id="input-section">
+    
+            <h1 id="header">Unit Conversion</h1>
+    
+            <div id="unit-select">
+    
+                <button id="metric-btn" class="input-btn">METRIC</button>
+                <button id="imperial-btn" class="input-btn">IMPERIAL</button>
+    
+            </div>
+ 
+    
+            <input id="input-el" type="number" placeholder="Enter value">
+            <button id="convert-btn" class="input-btn">CONVERT</button>
+    
+        </div>
+    
+    
+        <div id="output-section">
+    
+            <div class="outputs" id="length">
+                <h3 class="units" id="length-title">Length(Meter/Feet)</h3>
+            
+            </div>
+    
+            <div class="outputs" id="volume">
+                <h3 class="units" id="volume-title">Volume(Liters/Gallons)</h3>
+            
+            </div>
+    
+            <div class="outputs" id="mass">
+                <h3 class="units" id="mass-title">Mass(Kilograms/Pounds)</h3>
+            
+            </div>
+    
+    
+        </div>
+
+
+
+    </div>
+
 
 
 
