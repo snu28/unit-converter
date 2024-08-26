@@ -38,21 +38,16 @@ function convert(unit){
     if (inputEl.value){
 
 
-        if (unit==="IMPERIAL"){
-            lengthEl.innerHTML += `<p>${inputEl.value}m = ${(inputEl.value*3.281).toFixed(3)}ft</p>`
-            massEl.innerHTML += `<p >${inputEl.value}kg = ${(inputEl.value*2.205).toFixed(3)}lbs</p>`
-            volumeEl.innerHTML += `<p >${inputEl.value}l = ${(inputEl.value/3.785).toFixed(3)}US gal</p>`
-
-            
-    
-        }else if (unit==="METRIC"){
-            lengthEl.innerHTML += `<p>${inputEl.value}ft = ${(inputEl.value/3.281).toFixed(3)}m</p>`
-            massEl.innerHTML += `<p>${inputEl.value}lbs = ${(inputEl.value/2.205).toFixed(3)}kg</p>`
-            volumeEl.innerHTML += `<p >${inputEl.value}US gal = ${(inputEl.value*3.785).toFixed(3)}l</p>`
-    
-    
+        if (unit === "IMPERIAL") {
+            lengthEl.insertAdjacentHTML("beforeend", `<p>${inputEl.value}m = ${(inputEl.value * 3.281).toFixed(3)}ft</p>`);
+            massEl.insertAdjacentHTML("beforeend", `<p>${inputEl.value}kg = ${(inputEl.value * 2.205).toFixed(3)}lbs</p>`);
+            volumeEl.insertAdjacentHTML("beforeend", `<p>${inputEl.value}l = ${(inputEl.value / 3.785).toFixed(3)}US gal</p>`);
+        } else if (unit === "METRIC") {
+            lengthEl.insertAdjacentHTML("beforeend", `<p>${inputEl.value}ft = ${(inputEl.value / 3.281).toFixed(3)}m</p>`);
+            massEl.insertAdjacentHTML("beforeend", `<p>${inputEl.value}lbs = ${(inputEl.value / 2.205).toFixed(3)}kg</p>`);
+            volumeEl.insertAdjacentHTML("beforeend", `<p>${inputEl.value}US gal = ${(inputEl.value * 3.785).toFixed(3)}l</p>`);
         }
-
+        
     }
 
 }
